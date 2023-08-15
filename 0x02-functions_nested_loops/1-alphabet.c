@@ -13,8 +13,8 @@ void print_alphabet(void)
 {
 char letters[] = "abcdefghijklmnopqrstuvwxyz";
 int size = strlen(letters);
-
-for (int i = 0; i < size; i++)
+int i;
+for (i = 0; i < size; i++)
 {
 _putchar(letters[i]);
 }
