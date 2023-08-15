@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include "_putchar.c"
+#include "main.h"
+#include <string.h>
+/**
+ * main - call print_alphabet
+ * print_alphabet - print alphabets in lowercase
+ * Return: Always 0 (Success)
+*/
+
+
+void print_alphabet(void)
+{
+char letters[] = "abcdefghijklmnopqrstuvwxyz";
+int size = strlen(letters);
+
+for (int i = 0; i < size; i++)
+{
+_putchar(letters[1]);
+}
+_putchar('\n');
+}
+
+int main(void)
+{
+print_alphabet();
+return (0);
+}
