@@ -16,7 +16,7 @@ int size = strlen(letters);
 
 for (int i = 0; i < size; i++)
 {
-_putchar(letters[1]);
+_putchar(letters[i]);
 }
 _putchar('\n');
 }
