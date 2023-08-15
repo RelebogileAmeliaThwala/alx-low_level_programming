@@ -18,11 +18,12 @@ for (i = 0; i < size; i++)
 {
 _putchar(letters[i]);
 }
-_putchar('\n');
+
 }
 
 int main(void)
 {
 print_alphabet();
+_putchar('\n');
 return (0);
 }
