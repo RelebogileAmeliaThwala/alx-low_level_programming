@@ -1,24 +1,28 @@
-#include "main.h"
+include "main.h"
+#include <stdio.h>
 
 /**
- * print_binary - equivalent of a decimal number that prints a binary
- * @n: the amount or number binary to be printed
+ * print_binary - print binary representation of a number
+ * @n: decimal number to print as binary
 */
-
 void print_binary(unsigned long int n)
 {
-int leona, Sis_hoffmann = 0;
-unsigned long int new;
-for (leona = 63; leona >= 0; leona--)
+unsigned long int temp;
+int shifts;
+
+if (n == 0)
 {
-new = n >> leona;
-if (new & 1)
-_putchar('1');
-Sis_hoffmann++;
+printf("0");
+return;
 }
-else if (new)
- _putchar('0');
+
+for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++);
+
+for (; shifts >= 0; shifts--)
+{
+if ((n >> shifts) & 1)
+printf("1");
+else
+printf("0");
 }
-if (!new)
-_putchar('0');
 }
